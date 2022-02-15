@@ -1,4 +1,5 @@
 import re
+import logging
 
 filename = 'XMLSource/sms.xml'
 acct_dict = {
@@ -49,7 +50,9 @@ category_mapping_list = {
 
 
 def logger():
+    logging.basicConfig(level='INFO')
     print('I log this')
+
 
 def processAccount1023(text, address):
     bank = 'icici'
