@@ -48,6 +48,9 @@ category_mapping_list = {
 }
 
 
+def logger():
+    print('I log this')
+
 def processAccount1023(text, address):
     bank = 'icici'
     category = 'Unknown'
