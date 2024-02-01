@@ -11,6 +11,7 @@ def getAcctNumIfAny(smstext):
     return acct_num[0] if len(acct_num) else ''
 
 
+# this converts the XML to a data frame
 def loadXMLtoDF():
     cols_to_use = ['address', 'body', 'readable_date', 'contact_name']
     df = pd.read_xml(refd.filename, xpath=".//sms")
